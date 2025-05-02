@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub to DeepWiki",
+  "description": "一键从GitHub仓库跳转到DeepWiki知识库系统",
+  "version": "1.0",
+  "author": "teddyxiong53",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [{
+    "matches": ["https://github.com/*/*"],
+    "js": ["content.js"]
+  }],
+  "permissions": ["activeTab"]
+}
